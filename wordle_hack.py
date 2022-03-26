@@ -17,7 +17,7 @@ def get_guess_and_result(guess, words):
     print(f"Your guess: {guess}")
     return guess, input("Enter your result: ")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
 
     with open("words.txt") as f:
         words = f.read().strip().split()
