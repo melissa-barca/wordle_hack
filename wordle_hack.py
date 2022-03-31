@@ -23,6 +23,10 @@ def intro():
         print("Either provide your own first guess or request one. After each guess, enter a five character result using dots if the letter is not in the word, lower case letters if the letter is in the word but the wrong spot, and capital letters if the letter is in the correct spot.")
 
     print("Enter a five letter word to make your first guess or press Enter to be provided a random first guess.")
+    first_guess = input("> ")
+    if len(first_guess) != 5:
+        first_guess = starters.get_starter()
+    return first_guess
 
 def get_wordle(guess, words):
     if len(guess) != 5:
@@ -61,12 +65,25 @@ def apply_results(results, words):
 def retire_word(word, file_name = WORD_FILE):
     with open(ALREADY_USED_FILE, 'a') as f:
         f.write(word + '\n')
+        print(f"{word} written to {ALREADY_USED_FILE}")
     with open(file_name, 'r') as f:
         lines = f.readlines()
     lines.remove(word + "\n")
     with open(file_name, 'w') as f:
         f.writelines(["%s" % line for line in lines ])
+        print(f"{word} removed from {file_name}")
     
+def prompt_for_retire(backup_files, backup_file_count, word):
+    if len(backup_files) == 0:
+        sys.exit(f"This is a repeat word - {word} is already in {ALREADY_USED_FILE}!")
+
+    retire = input("Would you like to retire this word? [Yes/No] ") 
+    if len(retire) > 0 and retire[0] in ['Y', 'y']:
+        if len(backup_files) == backup_file_count:
+            retire_word(word)
+        else:
+            retire_word(word, LONG_WORD_FILE)
+
 def make_educated_guess(result, words):
     index = result.index('.')
     possibilities = set()
@@ -92,25 +109,29 @@ def make_educated_guess(result, words):
     return guess.rjust(5, end='.')
 
 
+def get_next_guess(wordle, words, results):
+    if wordle.result.isupper() and wordle.result.count('.') == 1 and len(results) < (MAX_GUESS - 2) and len(words) > 2:
+        return make_educated_guess(wordle.result, words)
+    return ""
+
 if __name__ == "__main__":
 
     with open(WORD_FILE) as f:
         words = f.read().strip().split()
 
     backup_files = [LONG_WORD_FILE, ALREADY_USED_FILE]
+    backup_file_count = len(backup_files)
 
-    intro()
-    first_guess = input("> ")
-    if len(first_guess) != 5:
-        first_guess = starters.get_starter()
-
+    first_guess = intro()
     wordle = get_wordle(first_guess, words)
     results = {wordle}
 
     while wordle.result != wordle.guess.upper():
 
+        # apply results to word list
         words = apply_results([wordle], words)
 
+        # when we run out of words, use back up files of less common and already used words
         while len(words) == 0 and len(backup_files) != 0:
             file_name = backup_files.pop(0)
             with open(file_name) as f:
@@ -120,20 +141,18 @@ if __name__ == "__main__":
             if len(backup_files) == 0 and words == 0:
                 sys.exit(NO_MORE_GUESSES)
 
+        # exit the game when there is only one word left and we've used all backup files
         if len(words) == 1 and len(backup_files) == 0:
-            sys.exit(f"Last guess! This must be the winner: {words[0]}")
+            print(f"Last guess! This must be the winner: {words[0]} 😸")
+            prompt_for_retire(backup_files, backup_file_count, words[0])
+            sys.exit()
 
-        if wordle.result.isupper() and wordle.result.count('.') == 1 and len(results) < (MAX_GUESS - 2) and len(words) > 2:
-            edu_guess = make_educated_guess(wordle.result, words)
-            wordle = get_wordle(edu_guess, words)
-        else:
-            wordle = get_wordle("", words)
+        # retrieve next guess and result
+        wordle = get_wordle(get_next_guess(wordle, words, results), words)
         results.add(wordle)
 
     if wordle.result == wordle.guess.upper():
         print("Congrats! You're a winner! 😸")
-        retire = input("Would you like to retire this word? [Yes/No] ") 
-        if len(retire) > 0 and retire[0] in ['Y', 'y']:
-            retire_word(wordle.guess)
+        prompt_for_retire(backup_files, backup_file_count, wordle.guess)
     else:
         sys.exit("Oh no! Something bad happened! 😿")

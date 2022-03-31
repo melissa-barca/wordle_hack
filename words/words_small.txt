@@ -891,7 +891,6 @@ blurs
 bases
 datum
 joint
-stove
 ether
 cuddy
 baldy

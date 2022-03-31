@@ -86,3 +86,4 @@ truss
 boost
 rebus
 shall
+stove
