@@ -87,3 +87,5 @@ boost
 rebus
 shall
 stove
+lowly
+snout

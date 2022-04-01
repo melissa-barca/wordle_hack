@@ -3329,7 +3329,6 @@ cruds
 spyal
 axoid
 haled
-snout
 unget
 troke
 sukhs
@@ -7332,7 +7331,6 @@ flute
 whids
 haiku
 kepis
-lowly
 coney
 gizmo
 jawan

@@ -106,7 +106,7 @@ def make_educated_guess(result, words):
         if len(guess) >= 5:
             return guess[0:5]
 
-    return guess.rjust(5, end='.')
+    return guess.ljust(5, ".")
 
 
 def get_next_guess(wordle, words, results):
@@ -127,6 +127,11 @@ if __name__ == "__main__":
     results = {wordle}
 
     while wordle.result != wordle.guess.upper():
+
+        if len(results) == MAX_GUESS:
+            continue_play = input(f"I'm sorry! You lost the NY Times puzzle 🙀 Do you want to keep playing? [Yes/yes to continue]")
+            if len(continue_play) == 0 or continue_play[0] not in ['Y', 'y']:
+                sys.exit(f"Sorry! Thanks for playing! 😿")
 
         # apply results to word list
         words = apply_results([wordle], words)
