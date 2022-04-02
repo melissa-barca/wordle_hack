@@ -1618,7 +1618,6 @@ torot
 flams
 ditts
 fetta
-trope
 thali
 paiks
 shave
