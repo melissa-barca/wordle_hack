@@ -1,14 +1,19 @@
+from numpy import choose
 import starters
+
+import collections
 
 import random
 import sys
 
 MAX_GUESS = 6
+WORD_LENGTH = 5
 WORD_FILE = "words/words_small.txt"
 LONG_WORD_FILE = "words/words.txt"
 ALREADY_USED_FILE = "words/already_used.txt"
 
 NO_MORE_GUESSES = "Uh oh! We ran out of guesses! 😿"
+NOT_IN_WORD_CHAR = "."
 
 class Wordle:
     def __init__(self, guess, result):
@@ -24,42 +29,90 @@ def intro():
 
     print("Enter a five letter word to make your first guess or press Enter to be provided a random first guess.")
     first_guess = input("> ")
-    if len(first_guess) != 5:
+    if len(first_guess) != WORD_LENGTH:
         first_guess = starters.get_starter()
     return first_guess
 
-def get_wordle(guess, words):
-    if len(guess) != 5:
+def get_guess(guess, words):
+    if len(guess) != WORD_LENGTH:
         if len(words) == 0:
-            print(f"get_wordle guess: {guess}")
             sys.exit(NO_MORE_GUESSES)
         guess = random.choice(words)
-
     if guess in words:
         words.remove(guess)
-  
+    return guess.lower()
+
+def get_wordle(guess, words):
+    guess = get_guess(guess, words)
     print(f"Your guess: {guess}")
 
     result = input("Enter your result: ")
-    while len(result) != 5:
+    while len(result) != WORD_LENGTH:
         result = input("Invalid result. Try again: ")
 
     return Wordle(guess, result)
 
+# assumes letter and guess are in lower case
+def apply_results_multiple(letter, wordle, words):
+    positions = set()
+    result = ""
+
+    for pos, char in enumerate(wordle.guess):
+        if char == letter:
+            positions.add(pos)
+            result += wordle.result[pos]
+    
+    # if the letter never appears in the word, remove all words with the letter
+    if result.count(NOT_IN_WORD_CHAR) == len(result):
+        words = [w for w in words if letter not in w]
+        return words
+
+    # analyze the number of occurrences
+    if NOT_IN_WORD_CHAR in result:
+        exact_count = len(result) - result.count(NOT_IN_WORD_CHAR)
+        words = [w for w in words if w.count(letter) == exact_count]
+    else:
+        floor_count = len(positions)
+        words = [w for w in words if w.count(letter) >= floor_count]
+    
+    # analyze the positions
+    for pos in positions:
+        if wordle.result[pos] != NOT_IN_WORD_CHAR:
+            if wordle.result[pos].isupper():
+                words = [w for w in words if w[pos] == letter]
+            else:
+                words = [w for w in words if w[pos] != letter]
+
+    return words
+
+# assumes guesses are in lower case
 def apply_results(results, words):
+
     for wordle in results:
+        multiples = set()
+
         for (i, zipped) in enumerate(zip(wordle.guess, wordle.result)):
-            if zipped[1] == '.':
+
+            if (wordle.guess.count(zipped[0]) > 1):
+                if zipped[0] not in multiples:
+                    multiples.add(zipped[0])
+                    words = apply_results_multiple(zipped[0], wordle, words)
+
+            elif zipped[1] == NOT_IN_WORD_CHAR:
                 words = [w for w in words if zipped[0] not in w]
-            elif zipped[1].upper() == zipped[0].upper():
+
+            elif zipped[0] == zipped[1].lower():
                 if zipped[1].isupper():
                     words = [w for w in words if w[i] == zipped[0].lower()]
                 else:
                     words = [w for w in words if zipped[0] in w and w[i] != zipped[0].lower()]
+
             else:
-                sys.exit(f"Unexpected input: {g} Exiting early")
+                sys.exit(f"Unexpected input: {zipped[1]} Exiting early")
+
         if len(words) <= 1:
             return words
+
     return words
 
 def retire_word(word, file_name = WORD_FILE):
@@ -84,8 +137,8 @@ def prompt_for_retire(backup_files, backup_file_count, word):
         else:
             retire_word(word, LONG_WORD_FILE)
 
-def make_educated_guess(result, words):
-    index = result.index('.')
+def make_educated_guess(result, words, backup_files, results = []):
+    index = result.index(NOT_IN_WORD_CHAR)
     possibilities = set()
     second_possibilities = set()
     for w in words:
@@ -98,21 +151,70 @@ def make_educated_guess(result, words):
     for p in possibilities:
         guess = guess + p
 
-    if len(guess) >= 5:
-        return guess[0:5]
+    if len(guess) >= WORD_LENGTH:
+        return guess[0:WORD_LENGTH]
 
     for p in second_possibilities:
         guess = guess + p
-        if len(guess) >= 5:
-            return guess[0:5]
+        if len(guess) >= WORD_LENGTH:
+            return guess[0:WORD_LENGTH]
 
-    return guess.ljust(5, ".")
+    while True:
+        if len(backup_files) == 0:
+            return guess.ljust(WORD_LENGTH, ".")
+        file = backup_files.pop(0)
+        other_words = read_words_from_backup_file(file, results)
+        if other_words != None:
+            break
+
+    other_guess = make_educated_guess(result, other_words, backup_files, results)
+    for g in other_guess:
+        if len(guess) == WORD_LENGTH or g == NOT_IN_WORD_CHAR:
+            return guess.ljust(WORD_LENGTH, ".")
+        if g not in guess:
+            guess += g
+
+    return guess.ljust(WORD_LENGTH, ".")
 
 
-def get_next_guess(wordle, words, results):
-    if wordle.result.isupper() and wordle.result.count('.') == 1 and len(results) < (MAX_GUESS - 2) and len(words) > 2:
-        return make_educated_guess(wordle.result, words)
-    return ""
+def read_words_from_backup_file(file_name, results):
+    with open(file_name) as f:
+        words = f.read().strip().split()
+    words = apply_results(results, words) 
+    return words
+
+def most_common_letter(words, exclude = []):
+    long_word = ''.join(str(w) for w in words)
+    for e in exclude:
+        long_word = long_word.replace(e, "")
+    if len(long_word) == 0:
+        return None
+
+    #return collections.Counter(long_word).most_common(1)[0][0]
+    return collections.Counter(long_word).most_common(round(len(words) / 2))[0][0]
+
+def most_common_letter_guess(words):
+    excludes = []
+    while len(words) != 1:
+        letter = most_common_letter(words, excludes)
+
+        if letter == None:
+            return random.choice(words)
+        excludes.append(letter)
+
+        words = [w for w in words if letter in w]
+    return words[0]
+
+def get_next_guess(wordle, words, results, backup_files):
+    # in some cases, we will narrow down our options by guessing letters instead of a word
+    #if ((len(results) < MAX_GUESS - 2) and
+    #    (educated_guess or 
+    #    (wordle.result.isupper() and wordle.result.count(NOT_IN_WORD_CHAR) == 1))):
+    #    guess = make_educated_guess(wordle.result, words, backup_files.copy(), results)
+    #    if guess.count(NOT_IN_WORD_CHAR) < WORD_LENGTH - 2:
+    #        return guess, True
+
+    return most_common_letter_guess(words)
 
 if __name__ == "__main__":
 
@@ -153,7 +255,10 @@ if __name__ == "__main__":
             sys.exit()
 
         # retrieve next guess and result
-        wordle = get_wordle(get_next_guess(wordle, words, results), words)
+        orig = len(words)
+        guess = get_next_guess(wordle, words, results, backup_files)
+        assert len(words) == orig
+        wordle = get_wordle(guess, words)
         results.add(wordle)
 
     if wordle.result == wordle.guess.upper():

@@ -5992,7 +5992,6 @@ drest
 masse
 symar
 dedal
-shawl
 kibla
 retag
 pawas
