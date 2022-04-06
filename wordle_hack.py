@@ -137,46 +137,6 @@ def prompt_for_retire(backup_files, backup_file_count, word):
         else:
             retire_word(word, LONG_WORD_FILE)
 
-def make_educated_guess(result, words, backup_files, results = []):
-    index = result.index(NOT_IN_WORD_CHAR)
-    possibilities = set()
-    second_possibilities = set()
-    for w in words:
-        if w[index].upper() in result:
-            second_possibilities.add(w[index])
-        else:
-            possibilities.add(w[index])
-
-    guess = ""
-    for p in possibilities:
-        guess = guess + p
-
-    if len(guess) >= WORD_LENGTH:
-        return guess[0:WORD_LENGTH]
-
-    for p in second_possibilities:
-        guess = guess + p
-        if len(guess) >= WORD_LENGTH:
-            return guess[0:WORD_LENGTH]
-
-    while True:
-        if len(backup_files) == 0:
-            return guess.ljust(WORD_LENGTH, ".")
-        file = backup_files.pop(0)
-        other_words = read_words_from_backup_file(file, results)
-        if other_words != None:
-            break
-
-    other_guess = make_educated_guess(result, other_words, backup_files, results)
-    for g in other_guess:
-        if len(guess) == WORD_LENGTH or g == NOT_IN_WORD_CHAR:
-            return guess.ljust(WORD_LENGTH, ".")
-        if g not in guess:
-            guess += g
-
-    return guess.ljust(WORD_LENGTH, ".")
-
-
 def read_words_from_backup_file(file_name, results):
     with open(file_name) as f:
         words = f.read().strip().split()
@@ -206,14 +166,6 @@ def most_common_letter_guess(words):
     return words[0]
 
 def get_next_guess(wordle, words, results, backup_files):
-    # in some cases, we will narrow down our options by guessing letters instead of a word
-    #if ((len(results) < MAX_GUESS - 2) and
-    #    (educated_guess or 
-    #    (wordle.result.isupper() and wordle.result.count(NOT_IN_WORD_CHAR) == 1))):
-    #    guess = make_educated_guess(wordle.result, words, backup_files.copy(), results)
-    #    if guess.count(NOT_IN_WORD_CHAR) < WORD_LENGTH - 2:
-    #        return guess, True
-
     return most_common_letter_guess(words)
 
 if __name__ == "__main__":

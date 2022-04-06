@@ -28,16 +28,6 @@ class TestWordleHack(unittest.TestCase):
         words = wordle_hack.apply_results([wordle], TEST_WORDS)
         self.assertEqual(set(words), {'abbas'})
 
-    def test_make_educated_guess(self):
-        result = '.OUND'
-        backup_files = [wordle_hack.WORD_FILE, wordle_hack.LONG_WORD_FILE, wordle_hack.ALREADY_USED_FILE]
-        educated_guess = wordle_hack.make_educated_guess(result, [], backup_files, [wordle_hack.Wordle('round', result)])
-        self.assertIn('p', educated_guess)
-        self.assertIn('w', educated_guess)
-        self.assertIn('b', educated_guess)
-        self.assertIn('s', educated_guess)
-        self.assertNotIn(wordle_hack.NOT_IN_WORD_CHAR, educated_guess)
-
     def play_game(self, winner, guess, in_words = TEST_WORDS):
         words = in_words.copy()
         words.remove(guess)
