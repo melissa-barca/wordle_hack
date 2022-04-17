@@ -150,8 +150,8 @@ def most_common_letter(words, exclude = []):
     if len(long_word) == 0:
         return None
 
-    #return collections.Counter(long_word).most_common(1)[0][0]
-    return collections.Counter(long_word).most_common(round(len(words) / 2))[0][0]
+    return collections.Counter(long_word).most_common(1)[0][0]
+    #return collections.Counter(long_word).most_common(round(len(words) / 2))[0][0]
 
 def most_common_letter_guess(words):
     excludes = []

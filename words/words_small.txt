@@ -68,7 +68,6 @@ aorta
 shelf
 truly
 wagon
-chunk
 chino
 dosas
 genes
@@ -98,7 +97,6 @@ shots
 frost
 trait
 index
-squad
 herbs
 banes
 celts
@@ -563,7 +561,6 @@ flyer
 welsh
 issue
 bicep
-ample
 fasts
 embed
 cumin
@@ -890,7 +887,6 @@ joint
 ether
 cuddy
 baldy
-shame
 lobby
 adieu
 items
@@ -1186,7 +1182,6 @@ bozos
 boffo
 canny
 bully
-cheek
 melee
 vague
 bento
@@ -1663,7 +1658,6 @@ blink
 atman
 cobia
 birth
-royal
 areas
 forth
 baton

@@ -4,7 +4,11 @@ import random
 #STARTERS = [ 'slice', 'tried', 'crane']
 
 # vowel heavy starters
-STARTERS = [ 'adieu', 'audio', 'canoe']
+#STARTERS = [ 'adieu', 'audio', 'canoe']
+
+# ny times wordle-bot starters 
+STARTERS = [ 'slant', 'trace' ]
+
 
 def get_starter():
     return random.choice(STARTERS)
