@@ -104,3 +104,6 @@ mince
 shame
 cheek
 ample
+foyer
+cargo
+oxide
