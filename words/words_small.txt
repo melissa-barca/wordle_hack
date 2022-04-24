@@ -1508,7 +1508,6 @@ cutis
 anime
 shift
 boils
-plant
 borne
 divot
 dealt
@@ -2117,7 +2116,6 @@ booms
 crude
 edits
 chits
-olive
 blare
 clank
 corgi

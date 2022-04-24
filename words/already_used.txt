@@ -107,3 +107,6 @@ ample
 foyer
 cargo
 oxide
+plant
+olive
+inert
