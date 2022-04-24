@@ -8,8 +8,7 @@ import sys
 
 MAX_GUESS = 6
 WORD_LENGTH = 5
-WORD_FILE = "words/words_small.txt"
-LONG_WORD_FILE = "words/words.txt"
+WORD_FILE = "words/wordle_words.txt"
 ALREADY_USED_FILE = "words/already_used.txt"
 
 NO_MORE_GUESSES = "Uh oh! We ran out of guesses! 😿"
@@ -134,8 +133,6 @@ def prompt_for_retire(backup_files, backup_file_count, word):
     if len(retire) > 0 and retire[0] in ['Y', 'y']:
         if len(backup_files) == backup_file_count:
             retire_word(word)
-        else:
-            retire_word(word, LONG_WORD_FILE)
 
 def read_words_from_backup_file(file_name, results):
     with open(file_name) as f:
@@ -173,7 +170,7 @@ if __name__ == "__main__":
     with open(WORD_FILE) as f:
         words = f.read().strip().split()
 
-    backup_files = [LONG_WORD_FILE, ALREADY_USED_FILE]
+    backup_files = [ALREADY_USED_FILE]
     backup_file_count = len(backup_files)
 
     first_guess = intro()
@@ -207,9 +204,7 @@ if __name__ == "__main__":
             sys.exit()
 
         # retrieve next guess and result
-        orig = len(words)
         guess = get_next_guess(wordle, words, results, backup_files)
-        assert len(words) == orig
         wordle = get_wordle(guess, words)
         results.add(wordle)
 
