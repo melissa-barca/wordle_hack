@@ -107,7 +107,6 @@ artsy
 ascot
 ashen
 aside
-askew
 assay
 asset
 atoll
@@ -755,7 +754,6 @@ folio
 folly
 force
 forge
-forgo
 forte
 forth
 forty
@@ -905,7 +903,6 @@ gusto
 gusty
 gypsy
 habit
-hairy
 halve
 handy
 happy
@@ -931,7 +928,6 @@ heave
 heavy
 hedge
 hefty
-heist
 helix
 hello
 hence
@@ -1052,7 +1048,6 @@ lance
 lanky
 lapel
 large
-larva
 lasso
 latch
 later
@@ -1654,7 +1649,6 @@ shorn
 short
 shout
 shove
-shown
 showy
 shrew
 shrub
@@ -1847,7 +1841,6 @@ stoop
 store
 stork
 storm
-story
 stout
 strap
 straw
@@ -1992,7 +1985,6 @@ trail
 train
 trait
 tramp
-trash
 trawl
 tread
 treat
@@ -2193,5 +2185,4 @@ yield
 young
 youth
 zebra
-zesty
 zonal
