@@ -132,7 +132,6 @@ axiom
 axion
 azure
 bacon
-badge
 badly
 bagel
 baggy
@@ -314,7 +313,6 @@ camel
 cameo
 canal
 candy
-canny
 canoe
 canon
 caper
@@ -940,7 +938,6 @@ hitch
 hobby
 hoist
 holly
-homer
 honey
 honor
 horde
@@ -1174,7 +1171,6 @@ meter
 metro
 micro
 midge
-midst
 might
 milky
 mimic
@@ -1635,7 +1631,6 @@ shelf
 shell
 shied
 shift
-shine
 shiny
 shirk
 shirt
@@ -1982,7 +1977,6 @@ track
 tract
 trade
 trail
-train
 trait
 tramp
 trawl
