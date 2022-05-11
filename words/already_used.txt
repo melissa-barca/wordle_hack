@@ -125,3 +125,8 @@ shine
 canny
 midst
 homer
+gecko
+farce
+harry
+butch
+slung

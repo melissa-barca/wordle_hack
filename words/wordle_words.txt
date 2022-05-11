@@ -293,7 +293,6 @@ burnt
 burst
 bused
 bushy
-butch
 butte
 buxom
 buyer
@@ -667,7 +666,6 @@ faith
 false
 fancy
 fanny
-farce
 fatal
 fatty
 fault
@@ -801,7 +799,6 @@ gawky
 gayer
 gayly
 gazer
-gecko
 geeky
 geese
 genie
@@ -907,7 +904,6 @@ happy
 hardy
 harem
 harpy
-harry
 harsh
 haste
 hasty
@@ -1692,7 +1688,6 @@ slink
 sloop
 slope
 sloth
-slung
 slunk
 slurp
 slush
