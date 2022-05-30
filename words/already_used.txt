@@ -138,3 +138,12 @@ scour
 glass
 gamer
 scrap
+money
+hinge
+album
+vouch
+tiara
+asset
+atoll
+bayou
+crept
