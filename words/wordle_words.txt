@@ -433,7 +433,6 @@ crave
 crawl
 craze
 crazy
-creak
 cream
 credo
 creed
@@ -504,7 +503,6 @@ demon
 demur
 denim
 dense
-depth
 derby
 deter
 detox
@@ -764,7 +762,6 @@ frock
 frond
 front
 frost
-froth
 frown
 froze
 fruit
@@ -815,7 +812,6 @@ glide
 glint
 gloat
 globe
-gloom
 glory
 gloss
 glove
@@ -1127,7 +1123,6 @@ mangy
 mania
 manic
 manly
-manor
 maple
 march
 marry
@@ -1314,7 +1309,6 @@ pesky
 pesto
 petal
 petty
-phase
 phone
 phony
 photo
@@ -1627,7 +1621,6 @@ shorn
 short
 shout
 shove
-showy
 shrew
 shrub
 shrug

@@ -147,3 +147,10 @@ asset
 atoll
 bayou
 crept
+manor
+creak
+showy
+phase
+froth
+gloom
+depth
