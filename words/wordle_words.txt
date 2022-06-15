@@ -107,7 +107,6 @@ ascot
 ashen
 aside
 assay
-atone
 attic
 audio
 audit
@@ -529,7 +528,6 @@ dodgy
 dogma
 doing
 dolly
-donor
 donut
 dopey
 doubt
@@ -716,9 +714,7 @@ flier
 fling
 flint
 flirt
-float
 flock
-flood
 floor
 flora
 floss
@@ -799,7 +795,6 @@ giant
 giddy
 gipsy
 girly
-girth
 given
 giver
 glade
@@ -827,7 +822,6 @@ goner
 goody
 gooey
 goofy
-goose
 gouge
 gourd
 grace
@@ -1315,7 +1309,6 @@ photo
 piano
 picky
 piece
-piety
 piggy
 pilot
 pinch
@@ -1950,7 +1943,6 @@ track
 tract
 trade
 trail
-trait
 tramp
 trawl
 tread
