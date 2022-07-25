@@ -31,7 +31,6 @@ afoot
 afoul
 after
 again
-agape
 agate
 agent
 agile
@@ -73,7 +72,6 @@ amuse
 angel
 anger
 angle
-angry
 angst
 anime
 ankle
@@ -85,7 +83,6 @@ antic
 anvil
 aorta
 apart
-aphid
 aping
 apnea
 apple
@@ -120,7 +117,6 @@ awake
 award
 aware
 awash
-awful
 awoke
 axial
 axiom
@@ -148,7 +144,6 @@ baton
 batty
 bawdy
 beach
-beady
 beard
 beast
 beech
@@ -168,7 +163,6 @@ below
 bench
 beret
 berry
-berth
 beset
 betel
 bevel
@@ -188,7 +182,6 @@ bison
 bitty
 blade
 blame
-bland
 blank
 blare
 blast
@@ -256,7 +249,6 @@ brick
 bride
 brief
 bring
-brink
 briny
 brisk
 broad
@@ -551,7 +543,6 @@ drift
 drill
 drive
 droit
-droll
 drone
 drool
 droop
@@ -587,7 +578,6 @@ eclat
 edict
 edify
 eerie
-egret
 eight
 eject
 eking
@@ -598,7 +588,6 @@ elegy
 elfin
 elide
 elite
-elope
 elude
 email
 embed
@@ -674,7 +663,6 @@ fetus
 fever
 fiber
 ficus
-field
 fiend
 fiery
 fifth
@@ -711,14 +699,12 @@ flier
 fling
 flint
 flirt
-flock
 floor
 flora
 floss
 flour
 flout
 flown
-fluff
 fluid
 fluke
 flume
@@ -778,7 +764,6 @@ gauge
 gaunt
 gauze
 gavel
-gawky
 gayer
 gayly
 gazer
@@ -802,7 +787,6 @@ gleam
 glean
 glide
 glint
-gloat
 globe
 glory
 gloss
@@ -933,7 +917,6 @@ hunky
 hurry
 husky
 hussy
-hutch
 hydro
 hyena
 hymen
@@ -961,7 +944,6 @@ ingot
 inlay
 inlet
 inner
-input
 inter
 intro
 ionic
@@ -1050,7 +1032,6 @@ lever
 libel
 liege
 liken
-lilac
 limbo
 limit
 linen
@@ -1058,7 +1039,6 @@ liner
 lingo
 lipid
 lithe
-liver
 livid
 llama
 loamy
@@ -1073,7 +1053,6 @@ login
 loopy
 loose
 lorry
-loser
 louse
 lousy
 lover
@@ -1096,7 +1075,6 @@ lyric
 macaw
 macho
 macro
-madam
 madly
 mafia
 magic
@@ -1142,7 +1120,6 @@ merry
 meter
 metro
 micro
-midge
 might
 milky
 mimic
@@ -1206,7 +1183,6 @@ newly
 nicer
 niche
 niece
-night
 ninja
 ninny
 ninth
@@ -1311,7 +1287,6 @@ pilot
 pinch
 piney
 pinky
-pinto
 piper
 pique
 pitch
@@ -1352,7 +1327,6 @@ posse
 pouch
 pound
 pouty
-power
 prank
 prawn
 preen
@@ -1465,7 +1439,6 @@ rerun
 reset
 resin
 retch
-retro
 retry
 reuse
 revel
@@ -1493,7 +1466,6 @@ rocky
 rodeo
 roger
 rogue
-roomy
 roost
 rotor
 rouge
@@ -1511,7 +1483,6 @@ ruler
 rumba
 rumor
 rural
-rusty
 sadly
 safer
 saint
@@ -1572,7 +1543,6 @@ serum
 serve
 setup
 seven
-sever
 sewer
 shack
 shade
@@ -1669,7 +1639,6 @@ smear
 smell
 smile
 smirk
-smite
 smith
 smock
 smoke
@@ -1770,7 +1739,6 @@ start
 stash
 state
 stave
-stead
 steak
 steal
 steam
@@ -1951,7 +1919,6 @@ trice
 trick
 tried
 tripe
-trite
 troll
 troop
 trout
@@ -1963,7 +1930,6 @@ trump
 trunk
 trust
 truth
-tryst
 tubal
 tuber
 tulip
@@ -2048,13 +2014,11 @@ vixen
 vocal
 vodka
 vogue
-voice
 voila
 vomit
 voter
 vowel
 vying
-wacky
 wafer
 wager
 wagon
@@ -2068,7 +2032,6 @@ waver
 waxen
 weary
 weave
-wedge
 weedy
 weigh
 weird
