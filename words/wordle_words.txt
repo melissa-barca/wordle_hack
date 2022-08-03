@@ -203,7 +203,6 @@ blond
 blood
 bloom
 bluer
-bluff
 blunt
 blurb
 blurt
@@ -349,7 +348,6 @@ churn
 chute
 cider
 cigar
-cinch
 circa
 civic
 civil
@@ -409,10 +407,8 @@ cover
 covet
 covey
 cower
-coyly
 crack
 craft
-cramp
 crane
 crash
 crass
@@ -1147,7 +1143,6 @@ mossy
 motel
 motif
 motor
-motto
 moult
 mound
 mouse
@@ -1370,7 +1365,6 @@ quail
 quake
 qualm
 quark
-quart
 quash
 quasi
 queen
@@ -1759,7 +1753,6 @@ stock
 stoic
 stoke
 stole
-stomp
 stone
 stony
 stood
@@ -1969,7 +1962,6 @@ until
 unwed
 unzip
 upper
-upset
 urban
 urine
 usage
@@ -2099,6 +2091,5 @@ yacht
 yearn
 yeast
 young
-youth
 zebra
 zonal
