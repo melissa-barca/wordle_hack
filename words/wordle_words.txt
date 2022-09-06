@@ -44,7 +44,6 @@ alarm
 alert
 algae
 alibi
-alien
 align
 alike
 alive
@@ -263,7 +262,6 @@ brush
 brute
 buddy
 budge
-buggy
 bugle
 build
 built
@@ -319,7 +317,6 @@ chalk
 champ
 chaos
 chard
-charm
 chart
 chase
 chasm
@@ -330,7 +327,6 @@ cheer
 chess
 chick
 chide
-chief
 child
 chili
 chill
@@ -367,7 +363,6 @@ clerk
 click
 cliff
 climb
-cling
 clink
 cloak
 clock
@@ -376,7 +371,6 @@ close
 cloud
 clout
 clove
-clown
 cluck
 clued
 clump
@@ -743,7 +737,6 @@ fruit
 fudge
 fugue
 fully
-fungi
 funky
 funny
 furor
@@ -758,7 +751,6 @@ gassy
 gaudy
 gauge
 gaunt
-gauze
 gavel
 gayer
 gayly
@@ -780,7 +772,6 @@ gland
 glare
 glaze
 gleam
-glean
 glide
 glint
 globe
@@ -836,7 +827,6 @@ grout
 grove
 growl
 grown
-gruel
 gruff
 grunt
 guard
@@ -909,7 +899,6 @@ humid
 humph
 humus
 hunch
-hunky
 hurry
 husky
 hussy
@@ -944,7 +933,6 @@ inter
 intro
 ionic
 irate
-irony
 islet
 issue
 itchy
@@ -973,7 +961,6 @@ kappa
 karma
 kayak
 kebab
-khaki
 kinky
 kiosk
 kitty
@@ -988,7 +975,6 @@ knock
 known
 koala
 krill
-label
 labor
 laden
 ladle
@@ -1111,7 +1097,6 @@ melee
 melon
 mercy
 merge
-merit
 merry
 meter
 metro
@@ -1168,7 +1153,6 @@ nanny
 nasal
 naval
 navel
-needy
 neigh
 nerdy
 nerve
@@ -1211,7 +1195,6 @@ older
 ombre
 omega
 onion
-onset
 opera
 opine
 opium
@@ -1253,7 +1236,6 @@ pasty
 patch
 patio
 patsy
-patty
 payee
 payer
 peace
@@ -1309,7 +1291,6 @@ plunk
 plush
 poesy
 poise
-poker
 polar
 polka
 polyp
@@ -1334,7 +1315,6 @@ print
 prior
 prism
 privy
-prize
 probe
 prone
 prong
@@ -1438,7 +1418,6 @@ reuse
 revel
 revue
 rhino
-rhyme
 rider
 ridge
 rifle
@@ -1471,7 +1450,6 @@ rover
 rowdy
 rower
 ruddy
-ruder
 rugby
 ruler
 rumba
@@ -1576,7 +1554,6 @@ shout
 shove
 shrew
 shrub
-shrug
 shuck
 shunt
 shush
@@ -1629,7 +1606,6 @@ smack
 small
 smart
 smash
-smear
 smell
 smile
 smirk
@@ -1903,7 +1879,6 @@ trail
 tramp
 trawl
 tread
-treat
 trend
 triad
 trial
@@ -1931,11 +1906,9 @@ tumor
 tunic
 turbo
 tutor
-twang
 tweak
 tweed
 tweet
-twice
 twine
 twirl
 twist
@@ -1949,7 +1922,6 @@ under
 undid
 undue
 unfed
-unfit
 unify
 union
 unite
@@ -2018,7 +1990,6 @@ waist
 waive
 waltz
 warty
-waste
 water
 waver
 waxen
@@ -2075,7 +2046,6 @@ worst
 worth
 would
 wound
-woven
 wrack
 wrath
 wreak
