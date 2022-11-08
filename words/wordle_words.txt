@@ -19,7 +19,6 @@ adage
 adapt
 adept
 admin
-admit
 adobe
 adopt
 adore
@@ -45,7 +44,6 @@ alert
 algae
 alibi
 align
-alike
 alive
 allay
 alley
@@ -54,8 +52,6 @@ alloy
 alone
 along
 aloof
-aloud
-alpha
 altar
 alter
 amass
@@ -86,7 +82,6 @@ aping
 apnea
 apple
 apply
-aptly
 arbor
 ardor
 arena
@@ -151,7 +146,6 @@ befit
 began
 begat
 beget
-begin
 begun
 being
 belch
@@ -215,14 +209,12 @@ bonus
 booby
 booth
 booty
-booze
 boozy
 borax
 borne
 bosom
 bossy
 botch
-bough
 boule
 bound
 bowel
@@ -248,7 +240,6 @@ bride
 brief
 bring
 briny
-brisk
 broad
 broil
 broke
@@ -299,10 +290,8 @@ caper
 caput
 carat
 carol
-carry
 carve
 caste
-catch
 catty
 cause
 cavil
@@ -341,7 +330,6 @@ chose
 chuck
 chump
 churn
-chute
 cider
 cigar
 circa
@@ -354,7 +342,6 @@ clang
 clank
 clash
 clasp
-class
 clean
 clear
 cleat
@@ -458,7 +445,6 @@ dairy
 daisy
 dally
 dance
-dandy
 datum
 daunt
 dealt
@@ -479,7 +465,6 @@ delay
 delta
 demon
 demur
-denim
 dense
 derby
 deter
@@ -509,7 +494,6 @@ doing
 dolly
 donut
 dopey
-doubt
 dough
 dowdy
 dowel
@@ -525,7 +509,6 @@ drape
 drawl
 drawn
 dread
-dream
 dress
 dried
 drier
@@ -588,14 +571,12 @@ enact
 endow
 enema
 enemy
-enjoy
 ennui
 ensue
 enter
 entry
 envoy
 epoch
-equal
 equip
 erase
 erect
@@ -618,7 +599,6 @@ exalt
 excel
 exert
 exile
-exist
 expel
 extol
 extra
@@ -634,7 +614,6 @@ fancy
 fanny
 fatal
 fatty
-fault
 fauna
 feast
 fecal
@@ -689,11 +668,9 @@ flier
 fling
 flint
 flirt
-floor
 flora
 floss
 flour
-flout
 flown
 fluid
 fluke
@@ -705,7 +682,6 @@ flute
 flyer
 foamy
 focal
-foggy
 foist
 folio
 folly
@@ -775,7 +751,6 @@ gleam
 glide
 glint
 globe
-glory
 gloss
 glove
 glyph
@@ -803,7 +778,6 @@ grape
 graph
 grasp
 grass
-grate
 grave
 gravy
 graze
@@ -824,7 +798,6 @@ grope
 gross
 group
 grout
-grove
 growl
 grown
 gruff
@@ -839,7 +812,6 @@ guile
 guilt
 guise
 gulch
-gully
 gumbo
 gummy
 guppy
@@ -893,7 +865,6 @@ hound
 house
 hovel
 hover
-howdy
 human
 humid
 humph
@@ -923,15 +894,12 @@ inane
 inbox
 incur
 index
-inept
 infer
 ingot
 inlay
 inlet
 inner
-inter
 intro
-ionic
 irate
 islet
 issue
@@ -999,10 +967,8 @@ learn
 lease
 leash
 least
-leave
 ledge
 leech
-leery
 lefty
 legal
 leggy
@@ -1011,7 +977,6 @@ lemur
 leper
 level
 lever
-libel
 liege
 liken
 limbo
@@ -1029,7 +994,6 @@ lobby
 local
 locus
 lodge
-lofty
 logic
 login
 loopy
@@ -1077,7 +1041,6 @@ manly
 maple
 march
 marry
-marsh
 mason
 masse
 match
@@ -1138,7 +1101,6 @@ mucky
 mucus
 muddy
 mulch
-mummy
 munch
 mural
 murky
@@ -1225,7 +1187,6 @@ panel
 pansy
 papal
 paper
-parer
 parka
 parry
 parse
@@ -1255,14 +1216,12 @@ petal
 petty
 phone
 phony
-photo
 piano
 picky
 piece
 piggy
 pilot
 pinch
-piney
 pinky
 piper
 pique
@@ -1356,7 +1315,6 @@ quick
 quiet
 quill
 quilt
-quirk
 quite
 quota
 quote
@@ -1392,7 +1350,6 @@ rearm
 rebar
 rebel
 rebut
-recap
 recur
 recut
 reedy
@@ -1457,7 +1414,6 @@ rumor
 rural
 sadly
 safer
-saint
 salad
 sally
 salon
@@ -1477,7 +1433,6 @@ sauna
 savor
 savoy
 savvy
-scald
 scale
 scalp
 scaly
@@ -1494,7 +1449,6 @@ scone
 scoop
 scope
 score
-scorn
 scout
 scowl
 scram
@@ -1597,7 +1551,6 @@ sling
 slink
 sloop
 slope
-sloth
 slunk
 slurp
 slush
@@ -1620,7 +1573,6 @@ snake
 snaky
 snare
 snarl
-sneak
 sneer
 snide
 sniff
@@ -1633,7 +1585,6 @@ snuck
 snuff
 soapy
 sober
-soggy
 solid
 solve
 sonar
@@ -1645,7 +1596,6 @@ sound
 south
 sower
 space
-spade
 spank
 spare
 spark
@@ -1655,7 +1605,6 @@ speak
 spear
 speck
 speed
-spell
 spelt
 spend
 spent
@@ -1663,7 +1612,6 @@ sperm
 spice
 spicy
 spied
-spiel
 spike
 spiky
 spilt
@@ -1697,7 +1645,6 @@ staid
 stain
 stair
 stake
-stale
 stalk
 stall
 stamp
@@ -1716,13 +1663,10 @@ steed
 steel
 steep
 steer
-stein
 stern
-stick
 stiff
 still
 stilt
-sting
 stink
 stint
 stock
@@ -1805,7 +1749,6 @@ tarot
 taste
 tasty
 tatty
-taunt
 tawny
 teach
 teary
@@ -1823,7 +1766,6 @@ terse
 testy
 thank
 theft
-theme
 there
 these
 theta
@@ -1841,8 +1783,6 @@ throw
 thrum
 thumb
 thump
-thyme
-tibia
 tidal
 tight
 tilde
@@ -1883,7 +1823,6 @@ trend
 triad
 trial
 tribe
-trice
 trick
 tried
 tripe
@@ -1909,7 +1848,6 @@ tutor
 tweak
 tweed
 tweet
-twine
 twirl
 twist
 twixt
@@ -1940,12 +1878,10 @@ usage
 usher
 using
 usual
-usurp
 utile
 utter
 vague
 valet
-valid
 valor
 value
 valve
@@ -1963,7 +1899,6 @@ verve
 vicar
 video
 vigil
-vigor
 villa
 vinyl
 viola
@@ -1988,7 +1923,6 @@ wager
 wagon
 waist
 waive
-waltz
 warty
 water
 waver
@@ -2015,7 +1949,6 @@ whirl
 whisk
 white
 whole
-whoop
 whose
 widen
 wider
