@@ -1,4 +1,3 @@
-from numpy import choose
 import starters
 
 import collections
