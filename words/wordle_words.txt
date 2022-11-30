@@ -103,7 +103,6 @@ audit
 augur
 aunty
 avail
-avert
 avian
 avoid
 await
@@ -113,14 +112,12 @@ aware
 awash
 awoke
 axial
-axiom
 axion
 azure
 bacon
 badly
 bagel
 baggy
-baker
 baler
 balmy
 banjo
@@ -226,7 +223,6 @@ brake
 brand
 brash
 brass
-brave
 bravo
 brawl
 brawn
@@ -342,7 +338,6 @@ clang
 clank
 clash
 clasp
-clean
 clear
 cleat
 cleft
@@ -514,7 +509,6 @@ dried
 drier
 drift
 drill
-drive
 droit
 drone
 drool
@@ -615,7 +609,6 @@ fanny
 fatal
 fatty
 fauna
-feast
 fecal
 feign
 fella
@@ -753,7 +746,6 @@ glint
 globe
 gloss
 glove
-glyph
 gnash
 gnome
 godly
@@ -821,7 +813,6 @@ gypsy
 habit
 halve
 handy
-happy
 hardy
 harem
 harpy
@@ -890,7 +881,6 @@ image
 imbue
 impel
 imply
-inane
 inbox
 incur
 index
@@ -903,7 +893,6 @@ intro
 irate
 islet
 issue
-itchy
 ivory
 jaunt
 jazzy
@@ -1038,7 +1027,6 @@ mangy
 mania
 manic
 manly
-maple
 march
 marry
 mason
@@ -1053,7 +1041,6 @@ mealy
 meant
 meaty
 mecca
-medal
 media
 medic
 melee
@@ -1269,7 +1256,6 @@ press
 price
 pride
 pried
-prime
 print
 prior
 prism
@@ -1325,7 +1311,6 @@ racer
 radar
 radii
 radio
-rainy
 raise
 rajah
 rally
@@ -1572,7 +1557,6 @@ snail
 snake
 snaky
 snare
-snarl
 sneer
 snide
 sniff
@@ -1688,7 +1672,6 @@ stray
 strip
 strut
 stuck
-study
 stuff
 stump
 stung
@@ -1760,13 +1743,11 @@ tenor
 tense
 tenth
 tepee
-tepid
 terra
 terse
 testy
 thank
 theft
-there
 these
 theta
 thick
@@ -1858,11 +1839,9 @@ uncle
 uncut
 under
 undid
-undue
 unfed
 unify
 union
-unite
 unity
 unlit
 unmet
@@ -1881,7 +1860,6 @@ usual
 utile
 utter
 vague
-valet
 valor
 value
 valve
