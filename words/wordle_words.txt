@@ -21,7 +21,6 @@ adept
 admin
 adobe
 adopt
-adore
 adorn
 adult
 affix
@@ -294,7 +293,6 @@ cavil
 cease
 cedar
 cello
-chafe
 chaff
 chain
 chair
@@ -546,7 +544,6 @@ edict
 edify
 eerie
 eight
-eject
 eking
 elate
 elbow
@@ -1782,7 +1779,6 @@ tooth
 topaz
 topic
 torch
-torso
 torus
 total
 totem
