@@ -20,7 +20,6 @@ adapt
 adept
 admin
 adobe
-adopt
 adorn
 adult
 affix
@@ -52,10 +51,8 @@ alone
 along
 aloof
 altar
-alter
 amass
 amaze
-amber
 amble
 amend
 amiss
@@ -73,14 +70,10 @@ annex
 annoy
 annul
 anode
-antic
 anvil
-aorta
 apart
 aping
 apnea
-apple
-apply
 arbor
 ardor
 arena
@@ -101,7 +94,6 @@ audio
 audit
 augur
 aunty
-avail
 avian
 avoid
 await
@@ -137,7 +129,6 @@ beach
 beard
 beast
 beech
-beefy
 befit
 began
 begat
@@ -145,7 +136,6 @@ beget
 begun
 being
 belch
-belie
 belle
 belly
 below
@@ -193,7 +183,6 @@ blood
 bloom
 bluer
 blunt
-blurb
 blurt
 blush
 board
@@ -216,7 +205,6 @@ bound
 bowel
 boxer
 brace
-braid
 brain
 brake
 brand
@@ -269,7 +257,6 @@ cabal
 cabby
 cabin
 cable
-cache
 cacti
 caddy
 cadet
@@ -299,7 +286,6 @@ chair
 chalk
 champ
 chaos
-chard
 chart
 chase
 chasm
@@ -318,7 +304,6 @@ china
 chirp
 chock
 choir
-chord
 chore
 chose
 chuck
@@ -365,7 +350,6 @@ comet
 comfy
 comic
 conch
-condo
 conic
 copse
 coral
@@ -373,7 +357,6 @@ corer
 corny
 couch
 cough
-count
 coupe
 court
 coven
@@ -387,7 +370,6 @@ crane
 crash
 crass
 crate
-crave
 crawl
 craze
 crazy
@@ -410,7 +392,6 @@ crock
 crone
 crony
 crook
-cross
 croup
 crowd
 crown
@@ -437,14 +418,12 @@ daily
 dairy
 daisy
 dally
-dance
 datum
 daunt
 dealt
 death
 debar
 debit
-debug
 debut
 decal
 decay
@@ -552,7 +531,6 @@ elegy
 elfin
 elide
 elite
-elude
 email
 embed
 ember
@@ -587,12 +565,10 @@ evict
 evoke
 exact
 exalt
-excel
 exert
 exile
 expel
 extol
-extra
 exult
 eying
 fable
@@ -636,12 +612,10 @@ final
 finch
 finer
 first
-fishy
 fixer
 fizzy
 fjord
 flack
-flail
 flair
 flake
 flaky
@@ -657,7 +631,6 @@ flick
 flier
 fling
 flint
-flirt
 flora
 floss
 flour
@@ -693,7 +666,6 @@ fried
 frill
 frisk
 fritz
-frock
 frond
 front
 frost
@@ -727,7 +699,6 @@ genie
 genre
 ghost
 ghoul
-giant
 giddy
 gipsy
 girly
@@ -777,7 +748,6 @@ greet
 grief
 grill
 grime
-grimy
 grind
 gripe
 groan
@@ -821,9 +791,7 @@ hater
 haunt
 haute
 haven
-havoc
 hazel
-heady
 heard
 heart
 heath
@@ -853,7 +821,6 @@ hound
 house
 hovel
 hover
-human
 humid
 humph
 humus
@@ -876,12 +843,10 @@ igloo
 iliac
 image
 imbue
-impel
 imply
 inbox
 incur
 index
-infer
 ingot
 inlay
 inlet
@@ -902,8 +867,6 @@ joint
 joist
 joker
 jolly
-joust
-judge
 juice
 juicy
 jumbo
@@ -916,7 +879,6 @@ karma
 kayak
 kebab
 kinky
-kiosk
 kitty
 knack
 knave
@@ -925,9 +887,7 @@ kneed
 kneel
 knelt
 knife
-knock
 known
-koala
 krill
 labor
 laden
@@ -943,12 +903,10 @@ later
 lathe
 latte
 laugh
-layer
 leach
 leafy
 leaky
 leant
-leapt
 learn
 lease
 leash
@@ -958,7 +916,6 @@ leech
 lefty
 legal
 leggy
-lemon
 lemur
 leper
 level
@@ -994,7 +951,6 @@ lucid
 lucky
 lumen
 lumpy
-lunar
 lunch
 lunge
 lupus
@@ -1009,9 +965,7 @@ macho
 macro
 madly
 mafia
-magic
 magma
-maize
 major
 maker
 mambo
@@ -1023,13 +977,11 @@ mango
 mangy
 mania
 manic
-manly
 march
 marry
 mason
 masse
 match
-matey
 mauve
 maxim
 maybe
@@ -1064,7 +1016,6 @@ modal
 model
 modem
 mogul
-molar
 moldy
 moody
 moose
@@ -1081,7 +1032,6 @@ mouse
 mouth
 mover
 mower
-mucky
 mucus
 muddy
 mulch
@@ -1094,7 +1044,6 @@ musky
 musty
 myrrh
 nadir
-naive
 nanny
 nasal
 naval
@@ -1110,7 +1059,6 @@ niche
 niece
 ninja
 ninny
-ninth
 noble
 nobly
 noise
@@ -1141,7 +1089,6 @@ older
 ombre
 omega
 onion
-opera
 opine
 opium
 optic
@@ -1213,7 +1160,6 @@ pitch
 pithy
 pivot
 pixel
-pixie
 pizza
 place
 plaid
@@ -1233,7 +1179,6 @@ plump
 plunk
 plush
 poesy
-poise
 polar
 polka
 polyp
@@ -1257,7 +1202,6 @@ print
 prior
 prism
 privy
-probe
 prone
 prong
 proof
@@ -1369,7 +1313,6 @@ riper
 risen
 riser
 risky
-rival
 river
 rivet
 roach
@@ -1399,7 +1342,6 @@ safer
 salad
 sally
 salon
-salsa
 salty
 salve
 salvo
@@ -1426,7 +1368,6 @@ scene
 scent
 scion
 scoff
-scold
 scone
 scoop
 scope
@@ -1439,7 +1380,6 @@ screw
 scrub
 scrum
 scuba
-sedan
 seedy
 segue
 seize
@@ -1476,7 +1416,6 @@ shell
 shied
 shift
 shiny
-shirk
 shirt
 shoal
 shock
@@ -1510,7 +1449,6 @@ skate
 skier
 skiff
 skimp
-skirt
 skulk
 skull
 skunk
@@ -1519,8 +1457,6 @@ slain
 slang
 slant
 slash
-slate
-sleek
 sleep
 sleet
 slept
@@ -1573,7 +1509,6 @@ sonic
 sooth
 sooty
 sorry
-sound
 south
 sower
 space
@@ -1598,12 +1533,10 @@ spiky
 spilt
 spine
 spiny
-spire
 spite
 splat
 split
 spoil
-spoke
 spoof
 spook
 spool
@@ -1621,7 +1554,6 @@ squat
 squib
 stack
 staff
-stage
 staid
 stain
 stair
@@ -1693,7 +1625,6 @@ swarm
 swash
 swath
 swear
-sweat
 sweep
 swell
 swept
@@ -1722,12 +1653,10 @@ tally
 talon
 tamer
 tango
-taper
 tapir
 tardy
 tarot
 taste
-tasty
 tatty
 tawny
 teach
@@ -1752,7 +1681,6 @@ thief
 thigh
 thing
 think
-third
 thong
 three
 threw
@@ -1839,7 +1767,6 @@ unfed
 unify
 union
 unity
-unlit
 unmet
 unset
 untie
@@ -1849,10 +1776,8 @@ unzip
 upper
 urban
 urine
-usage
 usher
 using
-usual
 utile
 utter
 vague
@@ -1917,7 +1842,6 @@ where
 which
 whiff
 while
-whine
 whiny
 whirl
 whisk
@@ -1938,7 +1862,6 @@ wiser
 wispy
 witch
 witty
-woken
 woman
 women
 woody
@@ -1947,7 +1870,6 @@ wooly
 woozy
 wordy
 world
-worry
 worse
 worst
 worth
