@@ -7,8 +7,10 @@ import random
 #STARTERS = [ 'adieu', 'audio', 'canoe']
 
 # ny times wordle-bot starters 
-STARTERS = [ 'slant', 'trace', 'crane', 'crate']
+#STARTERS = [ 'slant', 'trace', 'crane', 'crate']
 
+# never used starts
+STARTERS = [ 'slant', 'adieu', 'slice', 'tried' ]
 
 def get_starter():
     return random.choice(STARTERS)
