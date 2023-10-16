@@ -115,7 +115,7 @@ def apply_results(results, words):
 
 def retire_word(word, file_name = WORD_FILE):
     with open(ALREADY_USED_FILE, 'a') as f:
-        f.write(word + '\n')
+        f.write(word.upper() + '\n')
         print(f"{word} written to {ALREADY_USED_FILE}")
     with open(file_name, 'r') as f:
         lines = f.readlines()
@@ -185,7 +185,7 @@ if __name__ == "__main__":
 
         # apply results to word list
         words = apply_results([wordle], words)
-
+      
         # when we run out of words, use back up files of less common and already used words
         while len(words) == 0 and len(backup_files) != 0:
             file_name = backup_files.pop(0)

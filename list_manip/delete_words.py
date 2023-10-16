@@ -5,12 +5,15 @@ import sys
 ALREADY_USED_WORD_FILE  = '../words/already_used.txt'
 READ_WORD_FILE = './wordle_words.txt'
 NEW_WORD_FILE = '../words/wordle_words.txt'
+#NEW_WORD_FILE = '../words/test_wordle_words.txt'
 
 with open(ALREADY_USED_WORD_FILE) as f:
     delete_words = set(f.read().strip().split())
+    delete_words = {word.lower() for word in delete_words}
 
 with open(READ_WORD_FILE) as f:
     words = set(f.read().strip().split())
+    words = {word.lower() for word in words}
 
 new_words = list(words.difference(delete_words))
 new_words.sort()
