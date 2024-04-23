@@ -9,6 +9,7 @@ MAX_GUESS = 6
 WORD_LENGTH = 5
 WORD_FILE = "words/wordle_words.txt"
 ALREADY_USED_FILE = "words/already_used.txt"
+MISSING_FILE = "words/missing_words.txt"
 
 NO_MORE_GUESSES = "Uh oh! We ran out of guesses! 😿"
 NOT_IN_WORD_CHAR = "."
@@ -119,7 +120,10 @@ def retire_word(word, file_name = WORD_FILE):
         print(f"{word} written to {ALREADY_USED_FILE}")
     with open(file_name, 'r') as f:
         lines = f.readlines()
-    lines.remove(word + "\n")
+    if word + "\n" in lines:
+        lines.remove(word + "\n")
+    else:
+        sys.exit(f"Word '{word}' not found in {file_name}, could not complete retirement.")
     with open(file_name, 'w') as f:
         f.writelines(["%s" % line for line in lines ])
         print(f"{word} removed from {file_name}")
@@ -132,9 +136,11 @@ def prompt_for_retire(backup_files, backup_file_count, word):
     if len(retire) > 0 and retire[0] in ['Y', 'y']:
         if len(backup_files) == backup_file_count:
             retire_word(word)
+        else:
+            retire_word(word, MISSING_FILE)
 
 def read_words_from_backup_file(file_name, results):
-    with open(file_name) as f:
+    with open(file_name, encoding='utf-8') as f:
         words = f.read().strip().split()
     words = apply_results(results, words) 
     return words
@@ -155,6 +161,9 @@ def most_common_letter_guess(words):
         letter = most_common_letter(words, excludes)
 
         if letter == None:
+            if len(words) == 0:
+                print(f"Sorry there are no more words in this list.")
+                return;
             return random.choice(words)
         excludes.append(letter)
 
@@ -162,14 +171,39 @@ def most_common_letter_guess(words):
     return words[0]
 
 def get_next_guess(wordle, words, results, backup_files):
-    return most_common_letter_guess(words)
+    debug = True
+    result = most_common_letter_guess(words)
+    if result is not None:
+        return result
+
+    while len(backup_files) > 0:
+        file_name = backup_files.pop(0)
+        print(f"Opening file {file_name}")
+        with open(file_name, encoding='utf-8') as f:
+            words = f.read().strip().split()
+        if (debug):
+            print(f"...read {len(words)} words...")
+        words = apply_results(results, words)
+        if (debug):
+            print(f"New length of words {len(words)}")
+        if len(words) > 0:
+            result = most_common_letter_guess(words)
+            print(f"Using most common letter guess")
+            if result is not None:
+                return result
+    print(f"Oh no! We ran out of words!")
+
+    #return most_common_letter_guess(words)
 
 if __name__ == "__main__":
+    debug = True;
 
+    print(f"Opening file {WORD_FILE}")
     with open(WORD_FILE) as f:
         words = f.read().strip().split()
-
-    backup_files = [ALREADY_USED_FILE]
+    if (debug):
+        print(f"...read {len(words)} words...")
+    backup_files = [ MISSING_FILE, ALREADY_USED_FILE ]
     backup_file_count = len(backup_files)
 
     first_guess = intro()
@@ -189,8 +223,11 @@ if __name__ == "__main__":
         # when we run out of words, use back up files of less common and already used words
         while len(words) == 0 and len(backup_files) != 0:
             file_name = backup_files.pop(0)
-            with open(file_name) as f:
+            print(f"Opening file {file_name}")
+            with open(file_name, encoding='utf-8') as f:
                 words = f.read().strip().split()
+            if (debug):
+                print(f"...read {len(words)} words...")
             words = apply_results(results, words) 
 
             if len(backup_files) == 0 and words == 0:
