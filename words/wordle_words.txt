@@ -25,7 +25,6 @@ alley
 allot
 alloy
 along
-amass
 amaze
 amble
 amend
@@ -231,7 +230,6 @@ coven
 cover
 covey
 crack
-craft
 crash
 crawl
 cream
@@ -258,7 +256,6 @@ crump
 crush
 crypt
 cubic
-cumin
 curio
 curry
 curse
@@ -276,7 +273,6 @@ dealt
 debar
 debit
 debut
-decal
 decor
 decoy
 decry
@@ -291,7 +287,6 @@ derby
 deter
 detox
 deuce
-diary
 dicey
 dilly
 dimly
@@ -347,7 +342,6 @@ eagle
 easel
 eaten
 eater
-ebony
 eclat
 edict
 edify
@@ -474,7 +468,6 @@ giver
 glade
 gland
 glare
-gleam
 glide
 glint
 gloss
@@ -567,10 +560,8 @@ ingot
 inlay
 inlet
 inner
-intro
 issue
 jelly
-jerky
 jetty
 jewel
 jiffy
@@ -654,7 +645,6 @@ manic
 mauve
 meaty
 mecca
-media
 medic
 melee
 melon
@@ -691,7 +681,6 @@ munch
 murky
 mushy
 musky
-musty
 myrrh
 nadir
 nasal
@@ -734,11 +723,9 @@ order
 organ
 otter
 ounce
-outer
 outgo
 ovary
 ovate
-overt
 ovine
 ovoid
 owing
@@ -810,9 +797,7 @@ prong
 proof
 prose
 proud
-prowl
 prude
-prune
 pubic
 pudgy
 puffy
@@ -948,7 +933,6 @@ shalt
 shape
 share
 shark
-shave
 shear
 sheen
 sheep
@@ -994,7 +978,6 @@ slant
 slash
 sleet
 slept
-slice
 slick
 slide
 slime
@@ -1145,7 +1128,6 @@ thigh
 thong
 throb
 thrum
-tidal
 tight
 timer
 timid
@@ -1202,9 +1184,7 @@ upper
 urine
 utile
 valor
-value
 valve
-vapid
 vapor
 vault
 vaunt

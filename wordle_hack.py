@@ -1,7 +1,6 @@
+import argparse
 import starters
-
 import collections
-
 import random
 import sys
 
@@ -31,6 +30,11 @@ def intro():
     if len(first_guess) != WORD_LENGTH:
         first_guess = starters.get_starter()
     return first_guess
+
+def setup_parse():
+    parser = argparse.ArgumentParser(description="Wordle Hack")
+    parser.add_argument("--debug", action='store_true', help="Run with debug logging")
+    return parser.parse_args()
 
 def get_guess(guess, words):
     if len(guess) != WORD_LENGTH:
@@ -87,28 +91,35 @@ def apply_results_multiple(letter, wordle, words):
 # assumes guesses are in lower case
 def apply_results(results, words):
 
+    log_debug(f"applying results on {len(words)} words")
     for wordle in results:
         multiples = set()
 
+        log_debug(f"Applying guess '{wordle.guess}' and result '{wordle.result}'");
         for (i, zipped) in enumerate(zip(wordle.guess, wordle.result)):
 
             if (wordle.guess.count(zipped[0]) > 1):
                 if zipped[0] not in multiples:
                     multiples.add(zipped[0])
                     words = apply_results_multiple(zipped[0], wordle, words)
+                    log_debug(f"1 word count: {len(words)}");
 
             elif zipped[1] == NOT_IN_WORD_CHAR:
                 words = [w for w in words if zipped[0] not in w]
+                log_debug(f"2 word count: {len(words)}");
 
             elif zipped[0] == zipped[1].lower():
                 if zipped[1].isupper():
                     words = [w for w in words if w[i] == zipped[0].lower()]
+                    log_debug(f"3 word count: {len(words)}");
                 else:
                     words = [w for w in words if zipped[0] in w and w[i] != zipped[0].lower()]
+                    log_debug(f"4 word count: {len(words)}");
 
             else:
                 sys.exit(f"Unexpected input: {zipped[1]} Exiting early")
 
+        log_debug(f"Length of words after applying wordle: {len(words)}")
         if len(words) <= 1:
             return words
 
@@ -117,16 +128,18 @@ def apply_results(results, words):
 def retire_word(word, file_name = WORD_FILE):
     with open(ALREADY_USED_FILE, 'a') as f:
         f.write(word.upper() + '\n')
-        print(f"{word} written to {ALREADY_USED_FILE}")
+        log_debug(f"{word} written to {ALREADY_USED_FILE}")
+
     with open(file_name, 'r') as f:
         lines = f.readlines()
     if word + "\n" in lines:
         lines.remove(word + "\n")
     else:
         sys.exit(f"Word '{word}' not found in {file_name}, could not complete retirement.")
+
     with open(file_name, 'w') as f:
         f.writelines(["%s" % line for line in lines ])
-        print(f"{word} removed from {file_name}")
+        log_debug(f"{word} removed from {file_name}")
     
 def prompt_for_retire(backup_files, backup_file_count, word):
     if len(backup_files) == 0:
@@ -171,38 +184,41 @@ def most_common_letter_guess(words):
     return words[0]
 
 def get_next_guess(wordle, words, results, backup_files):
-    debug = True
     result = most_common_letter_guess(words)
     if result is not None:
         return result
 
     while len(backup_files) > 0:
         file_name = backup_files.pop(0)
-        print(f"Opening file {file_name}")
+        log_debug(f"Opening file {file_name}")
         with open(file_name, encoding='utf-8') as f:
             words = f.read().strip().split()
-        if (debug):
-            print(f"...read {len(words)} words...")
+        log_debug(f"...read {len(words)} words...")
         words = apply_results(results, words)
-        if (debug):
-            print(f"New length of words {len(words)}")
+        log_debug(f"New length of words {len(words)}")
         if len(words) > 0:
             result = most_common_letter_guess(words)
-            print(f"Using most common letter guess")
+            log_debug(f"Using most common letter guess")
             if result is not None:
                 return result
     print(f"Oh no! We ran out of words!")
-
     #return most_common_letter_guess(words)
 
-if __name__ == "__main__":
-    debug = True;
+def log_debug(message):
+    if args.debug:
+        print(message)
 
-    print(f"Opening file {WORD_FILE}")
+if __name__ == "__main__":
+    args = setup_parse()
+
+    log_debug(f"Debug mode is on")
+    log_debug(f"Opening file {WORD_FILE}")
+
     with open(WORD_FILE) as f:
         words = f.read().strip().split()
-    if (debug):
-        print(f"...read {len(words)} words...")
+
+    log_debug(f"...read {len(words)} words...")
+
     backup_files = [ MISSING_FILE, ALREADY_USED_FILE ]
     backup_file_count = len(backup_files)
 
@@ -223,11 +239,10 @@ if __name__ == "__main__":
         # when we run out of words, use back up files of less common and already used words
         while len(words) == 0 and len(backup_files) != 0:
             file_name = backup_files.pop(0)
-            print(f"Opening file {file_name}")
+            log_debug(f"Opening file {file_name}")
             with open(file_name, encoding='utf-8') as f:
                 words = f.read().strip().split()
-            if (debug):
-                print(f"...read {len(words)} words...")
+            log_debug(f"...read {len(words)} words...")
             words = apply_results(results, words) 
 
             if len(backup_files) == 0 and words == 0:
