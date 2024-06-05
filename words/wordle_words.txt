@@ -70,7 +70,6 @@ banjo
 baron
 basal
 basil
-basin
 basis
 baste
 batch
@@ -84,7 +83,6 @@ begun
 belle
 berry
 betel
-bevel
 bezel
 bible
 bicep
@@ -132,11 +130,9 @@ brace
 brain
 brand
 brass
-bravo
 brawl
 brawn
 brick
-briny
 broad
 broil
 brood
@@ -180,7 +176,6 @@ cello
 chaff
 chair
 chalk
-chaos
 chase
 chasm
 cheap
@@ -290,7 +285,6 @@ deuce
 dicey
 dilly
 dimly
-dingo
 dingy
 diode
 dirge
@@ -370,7 +364,6 @@ ether
 etude
 event
 evict
-exalt
 exile
 extol
 eying
@@ -468,7 +461,6 @@ giver
 glade
 gland
 glare
-glide
 glint
 gloss
 gnome
@@ -492,7 +484,6 @@ greed
 grill
 grind
 groan
-groom
 grope
 gross
 grown
@@ -505,7 +496,6 @@ guilt
 guise
 gulch
 gumbo
-gummy
 gusto
 gusty
 gypsy
@@ -529,7 +519,6 @@ hence
 hilly
 hippo
 hippy
-hitch
 hoist
 holly
 honey
@@ -655,7 +644,6 @@ miner
 minim
 minor
 minty
-minus
 mirth
 miser
 missy
@@ -690,7 +678,6 @@ nerdy
 nerve
 newer
 newly
-nicer
 niche
 niece
 ninny
@@ -737,7 +724,6 @@ paint
 paler
 palsy
 pansy
-papal
 parka
 parse
 paste
@@ -760,7 +746,6 @@ petal
 petty
 piece
 piggy
-pinch
 pitch
 pivot
 pizza
@@ -967,7 +952,6 @@ siren
 sixth
 sixty
 skate
-skier
 skiff
 skulk
 skull
@@ -1044,11 +1028,9 @@ stack
 stain
 stake
 stalk
-stall
 stamp
 stank
 stare
-stark
 stave
 steak
 steal
@@ -1091,7 +1073,6 @@ swell
 swept
 swift
 swing
-swish
 swoon
 swoop
 sword
@@ -1131,7 +1112,6 @@ thrum
 tight
 timer
 timid
-titan
 title
 toast
 toddy
@@ -1167,7 +1147,6 @@ tulle
 tumor
 tunic
 turbo
-tutor
 tweet
 twist
 twixt
