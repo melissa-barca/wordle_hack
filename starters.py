@@ -10,7 +10,7 @@ import random
 #STARTERS = [ 'slant', 'trace', 'crane', 'crate']
 
 # never used starts
-STARTERS = [ 'slant', 'adieu', 'tried' ]
+STARTERS = [ 'slant', 'tried' ]
 
 def get_starter():
     return random.choice(STARTERS)
