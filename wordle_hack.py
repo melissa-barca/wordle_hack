@@ -205,8 +205,11 @@ def get_next_guess(wordle, words, results, backup_files):
     #return most_common_letter_guess(words)
 
 def log_debug(message):
-    if args.debug:
-        print(message)
+    try:
+        if args.debug:
+            print(message)
+    except NameError:
+        pass
 
 if __name__ == "__main__":
     args = setup_parse()

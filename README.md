@@ -21,3 +21,6 @@ Your guess: empty
 Enter your result: E.p.Y
 Final guess! This must be the winner: epoxy
 ```
+
+## Tests
+Run the unit tests with `python3 wordle_hack_tests.py`.
