@@ -33,7 +33,6 @@ among
 amply
 amuse
 angle
-angst
 anime
 ankle
 annex
@@ -139,9 +138,7 @@ brood
 brown
 brunt
 brute
-buddy
 budge
-bugle
 bulge
 bunny
 burnt
@@ -222,7 +219,6 @@ couch
 cough
 coupe
 coven
-cover
 covey
 crack
 crash
@@ -243,7 +239,6 @@ crock
 crony
 crook
 croup
-crowd
 crown
 crude
 cruel
@@ -279,7 +274,6 @@ demon
 demur
 dense
 derby
-deter
 detox
 deuce
 dicey
@@ -295,7 +289,6 @@ diver
 dizzy
 dodgy
 dogma
-dolly
 dopey
 dough
 dowdy
@@ -318,7 +311,6 @@ droit
 drone
 drool
 dross
-drove
 drown
 druid
 drunk
@@ -337,7 +329,6 @@ easel
 eaten
 eater
 eclat
-edict
 edify
 eerie
 eight
@@ -360,7 +351,6 @@ envoy
 erase
 erect
 ester
-ether
 etude
 event
 evict
@@ -482,7 +472,6 @@ gravy
 graze
 greed
 grill
-grind
 groan
 grope
 gross
@@ -515,7 +504,6 @@ haven
 hazel
 hedge
 hefty
-hence
 hilly
 hippo
 hippy
@@ -568,7 +556,6 @@ kinky
 kitty
 knack
 knave
-knead
 kneed
 knife
 known
@@ -626,7 +613,6 @@ maker
 mambo
 mamma
 mammy
-manga
 mange
 mango
 mangy
@@ -636,7 +622,6 @@ meaty
 mecca
 medic
 melee
-melon
 meter
 might
 milky
@@ -707,7 +692,6 @@ opium
 optic
 orbit
 order
-organ
 otter
 ounce
 outgo
@@ -720,7 +704,6 @@ owner
 ozone
 paddy
 pagan
-paint
 paler
 palsy
 pansy
@@ -774,14 +757,12 @@ prawn
 preen
 press
 pried
-prior
 prism
 privy
 prone
 prong
 proof
 prose
-proud
 prude
 pubic
 pudgy
@@ -881,7 +862,6 @@ satyr
 sauce
 saucy
 sauna
-savor
 savoy
 savvy
 scale
@@ -890,7 +870,6 @@ scaly
 scamp
 scary
 scene
-scent
 scion
 scoff
 scone
@@ -1078,7 +1057,6 @@ swoop
 sword
 swore
 sworn
-swung
 synod
 tabby
 tacky
@@ -1099,7 +1077,6 @@ tenor
 tense
 tepee
 terra
-terse
 testy
 thank
 theft
@@ -1165,7 +1142,6 @@ utile
 valor
 valve
 vapor
-vault
 vaunt
 vegan
 venue
@@ -1233,5 +1209,4 @@ wrest
 wring
 wryly
 yeast
-zebra
 zonal
