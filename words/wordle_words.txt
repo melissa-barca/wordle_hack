@@ -4,8 +4,6 @@ abled
 abode
 abort
 abuse
-acorn
-adage
 adept
 admin
 adorn
@@ -38,7 +36,6 @@ ankle
 annex
 annoy
 annul
-anvil
 aping
 apnea
 arena
@@ -58,7 +55,6 @@ avian
 avoid
 award
 aware
-awash
 awoke
 axial
 axion
@@ -94,7 +90,6 @@ bison
 bitty
 blade
 blank
-blare
 blast
 blaze
 bleat
@@ -125,7 +120,6 @@ boule
 bound
 bowel
 boxer
-brace
 brain
 brand
 brass
@@ -137,7 +131,6 @@ broil
 brood
 brown
 brunt
-brute
 budge
 bulge
 bunny
@@ -156,13 +149,10 @@ cabin
 cable
 cacti
 caddy
-cadet
 cagey
 cairn
 camel
-cameo
 canal
-canon
 caput
 carve
 caste
@@ -172,7 +162,6 @@ cease
 cello
 chaff
 chair
-chalk
 chase
 chasm
 cheap
@@ -243,7 +232,6 @@ crown
 crude
 cruel
 crump
-crush
 crypt
 cubic
 curio
@@ -262,14 +250,11 @@ daunt
 dealt
 debar
 debit
-debut
 decor
-decoy
 decry
 defer
 deign
 deity
-delay
 demon
 demur
 dense
@@ -342,10 +327,8 @@ elide
 elite
 embed
 emcee
-enact
 endow
 enemy
-ensue
 entry
 envoy
 erase
@@ -373,7 +356,6 @@ felon
 femme
 femur
 fence
-feral
 fetal
 fetch
 fetid
@@ -385,14 +367,12 @@ fiery
 fifth
 fight
 filer
-filet
 filly
 filmy
 filth
 finch
 fizzy
 flack
-flake
 flaky
 flash
 fleck
@@ -410,7 +390,6 @@ flute
 foamy
 foist
 folio
-forte
 forum
 frail
 fraud
@@ -436,7 +415,6 @@ gaily
 gamut
 gassy
 gauge
-gaunt
 gavel
 gayer
 gayly
@@ -534,17 +512,14 @@ imply
 inbox
 incur
 ingot
-inlay
 inlet
 inner
 issue
 jelly
 jetty
 jewel
-jiffy
 joint
 joist
-juice
 juicy
 jumbo
 jumpy
@@ -564,7 +539,6 @@ laden
 ladle
 lager
 lance
-lanky
 lasso
 latch
 later
@@ -574,7 +548,6 @@ leach
 leant
 lease
 least
-leech
 lefty
 legal
 lemur
@@ -596,7 +569,6 @@ login
 loose
 lorry
 lousy
-lower
 lumen
 lumpy
 lupus
@@ -604,7 +576,6 @@ lurch
 lurid
 lymph
 lyric
-macaw
 macho
 macro
 madly
@@ -620,9 +591,7 @@ manic
 mauve
 meaty
 mecca
-medic
 melee
-meter
 might
 milky
 miner
@@ -649,7 +618,6 @@ mover
 mower
 mucus
 muddy
-mulch
 munch
 murky
 mushy
@@ -658,8 +626,6 @@ myrrh
 nadir
 nasal
 navel
-neigh
-nerdy
 nerve
 newer
 newly
@@ -693,7 +659,6 @@ optic
 orbit
 order
 otter
-ounce
 outgo
 ovary
 ovate
@@ -721,7 +686,6 @@ pecan
 pedal
 penal
 pence
-penne
 penny
 peril
 pesto
@@ -746,7 +710,6 @@ poesy
 polar
 pooch
 poppy
-porch
 poser
 posit
 posse
@@ -760,7 +723,6 @@ pried
 prism
 privy
 prone
-prong
 proof
 prose
 prude
@@ -787,7 +749,6 @@ queer
 quell
 quill
 quilt
-quite
 quota
 quoth
 rabbi
@@ -813,7 +774,6 @@ rebel
 recur
 recut
 reedy
-refer
 refit
 rehab
 reign
@@ -860,19 +820,15 @@ sappy
 satin
 satyr
 sauce
-saucy
 sauna
 savoy
 savvy
-scale
 scalp
 scaly
 scamp
 scary
 scene
 scion
-scoff
-scone
 scoop
 score
 scowl
@@ -890,11 +846,9 @@ seven
 sewer
 shack
 shady
-shaft
 shaky
 shale
 shalt
-shape
 share
 shark
 shear
@@ -913,7 +867,6 @@ shock
 shone
 shook
 shoot
-shore
 short
 shout
 shove
@@ -931,7 +884,6 @@ siren
 sixth
 sixty
 skate
-skiff
 skulk
 skull
 slack
@@ -954,7 +906,6 @@ slush
 slyly
 smack
 smell
-smock
 smoke
 smoky
 smote
@@ -980,7 +931,6 @@ spark
 spasm
 spawn
 spear
-speck
 speed
 sperm
 spied
@@ -1025,7 +975,6 @@ stony
 stood
 stoop
 stork
-storm
 stray
 strip
 strut
@@ -1040,7 +989,6 @@ suite
 sully
 sumac
 sunny
-super
 surge
 swami
 swamp
@@ -1052,7 +1000,6 @@ swell
 swept
 swift
 swing
-swoon
 swoop
 sword
 swore
@@ -1082,7 +1029,6 @@ thank
 theft
 theta
 thick
-thigh
 thong
 throb
 thrum
@@ -1148,7 +1094,6 @@ venue
 verse
 verso
 vicar
-video
 vigil
 villa
 vinyl
