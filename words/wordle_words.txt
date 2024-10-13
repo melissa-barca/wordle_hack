@@ -12,7 +12,6 @@ afire
 afoot
 afoul
 aider
-aisle
 alarm
 alert
 algae
@@ -122,11 +121,9 @@ bowel
 boxer
 brain
 brand
-brass
 brawl
 brawn
 brick
-broad
 broil
 brood
 brown
@@ -151,10 +148,8 @@ cacti
 caddy
 cagey
 cairn
-camel
 canal
 caput
-carve
 caste
 catty
 cavil
@@ -190,7 +185,6 @@ cleat
 cliff
 clink
 cloak
-cloud
 clout
 clove
 clued
@@ -228,7 +222,6 @@ crock
 crony
 crook
 croup
-crown
 crude
 cruel
 crump
@@ -249,7 +242,6 @@ datum
 daunt
 dealt
 debar
-debit
 decor
 decry
 defer
@@ -285,7 +277,6 @@ drama
 drank
 drape
 drawl
-drawn
 dread
 dress
 dried
@@ -341,9 +332,7 @@ exile
 extol
 eying
 fable
-faint
 fairy
-faith
 false
 fancy
 fanny
@@ -379,12 +368,10 @@ fleck
 fleet
 flier
 flint
-flour
 flown
 fluid
 fluke
 flung
-flunk
 flush
 flute
 foamy
@@ -404,7 +391,6 @@ frown
 fruit
 fudge
 fugue
-fully
 funky
 furor
 furry
@@ -464,16 +450,13 @@ guise
 gulch
 gumbo
 gusto
-gusty
 gypsy
 habit
 halve
-handy
 hardy
 harem
 harpy
 harry
-harsh
 haste
 hasty
 haunt
@@ -487,7 +470,6 @@ hippo
 hippy
 hoist
 holly
-honey
 honor
 horny
 hotly
@@ -518,7 +500,6 @@ issue
 jelly
 jetty
 jewel
-joint
 joist
 juicy
 jumbo
@@ -537,7 +518,6 @@ known
 krill
 laden
 ladle
-lager
 lance
 lasso
 latch
@@ -558,7 +538,6 @@ liege
 liken
 limbo
 lipid
-lithe
 livid
 llama
 loamy
@@ -594,7 +573,6 @@ mecca
 melee
 might
 milky
-miner
 minim
 minor
 minty
@@ -603,7 +581,6 @@ miser
 missy
 mocha
 modal
-modem
 mogul
 moldy
 moody
@@ -620,7 +597,6 @@ mucus
 muddy
 munch
 murky
-mushy
 musky
 myrrh
 nadir
@@ -665,7 +641,6 @@ ovate
 ovine
 ovoid
 owing
-owner
 ozone
 paddy
 pagan
@@ -718,11 +693,9 @@ pouty
 prank
 prawn
 preen
-press
 pried
 prism
 privy
-prone
 proof
 prose
 prude
@@ -770,8 +743,6 @@ reach
 ready
 rearm
 rebar
-rebel
-recur
 recut
 reedy
 refit
@@ -782,11 +753,9 @@ relay
 remit
 renal
 reply
-rerun
 reset
 reuse
 revue
-rider
 rifle
 rigid
 rigor
@@ -842,7 +811,6 @@ semen
 sepia
 serif
 setup
-seven
 sewer
 shack
 shady
@@ -858,7 +826,6 @@ sheer
 sheet
 sheik
 shelf
-shell
 shied
 shiny
 shirt
@@ -906,7 +873,6 @@ slush
 slyly
 smack
 smell
-smoke
 smoky
 smote
 sneer
@@ -954,8 +920,6 @@ spunk
 spurn
 squib
 stack
-stain
-stake
 stalk
 stamp
 stank
@@ -963,7 +927,6 @@ stare
 stave
 steak
 steal
-steam
 steep
 steer
 stern
@@ -1015,7 +978,6 @@ tamer
 tango
 tarot
 tatty
-teach
 teary
 teddy
 teeth
@@ -1025,7 +987,6 @@ tense
 tepee
 terra
 testy
-thank
 theft
 theta
 thick
@@ -1035,14 +996,12 @@ thrum
 tight
 timer
 timid
-title
 toast
 toddy
 token
 tonal
 tonga
 tooth
-torch
 torus
 total
 tower
@@ -1110,7 +1069,6 @@ vowel
 vying
 wafer
 wager
-wagon
 waist
 waive
 warty
@@ -1128,7 +1086,6 @@ wheat
 white
 whole
 whose
-widen
 wider
 widow
 width
