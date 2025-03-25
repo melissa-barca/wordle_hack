@@ -22,13 +22,11 @@ allot
 alloy
 along
 amaze
-amble
 amend
 amity
 among
 amply
 amuse
-angle
 anime
 ankle
 annex
@@ -51,7 +49,6 @@ augur
 aunty
 avian
 avoid
-award
 aware
 awoke
 axial
@@ -64,7 +61,6 @@ baron
 basal
 basil
 basis
-baste
 batch
 beard
 beech
@@ -103,7 +99,6 @@ board
 bobby
 boney
 bongo
-bonus
 booth
 booty
 borne
@@ -148,9 +143,7 @@ cease
 cello
 chaff
 chair
-chase
 chasm
-check
 chess
 chick
 chide
@@ -172,7 +165,6 @@ cleat
 cliff
 clink
 clout
-clove
 clued
 clump
 clung
@@ -190,7 +182,6 @@ coven
 covey
 crack
 crash
-cream
 creed
 creek
 creep
@@ -202,7 +193,6 @@ cried
 crier
 crock
 crony
-crook
 croup
 crude
 cruel
@@ -225,7 +215,6 @@ debar
 decor
 defer
 deign
-deity
 demon
 demur
 dense
@@ -238,11 +227,9 @@ diode
 dirge
 dirty
 ditch
-ditty
 diver
 dizzy
 dodgy
-dopey
 dough
 dowdy
 dowel
@@ -264,7 +251,6 @@ dross
 drown
 druid
 drunk
-dryer
 dryly
 dully
 dummy
@@ -354,7 +340,6 @@ fugue
 furor
 furry
 fussy
-fuzzy
 gaffe
 gaily
 gamut
@@ -372,7 +357,6 @@ gipsy
 girly
 giver
 glade
-gland
 glare
 glint
 gloss
@@ -380,7 +364,6 @@ gnome
 godly
 golly
 gonad
-goody
 gooey
 gourd
 graft
@@ -389,7 +372,6 @@ grass
 grave
 gravy
 graze
-greed
 grill
 groan
 grope
@@ -424,7 +406,6 @@ honor
 horny
 hotly
 hovel
-hover
 humus
 husky
 hussy
@@ -462,9 +443,7 @@ knife
 known
 krill
 laden
-ladle
 lance
-lasso
 latch
 later
 lathe
@@ -487,7 +466,6 @@ llama
 loamy
 loath
 lobby
-lodge
 login
 loose
 lorry
@@ -501,13 +479,11 @@ lymph
 lyric
 macho
 macro
-madly
 mafia
 maker
 mamma
 mammy
 mange
-mango
 mangy
 manic
 meaty
@@ -543,7 +519,6 @@ musky
 myrrh
 nadir
 nasal
-navel
 newer
 newly
 niece
@@ -555,7 +530,6 @@ noose
 nosey
 notch
 novel
-nudge
 nurse
 nutty
 nylon
@@ -573,7 +547,6 @@ opium
 optic
 orbit
 order
-otter
 outgo
 ovary
 ovate
@@ -595,7 +568,6 @@ patsy
 payee
 payer
 pecan
-pedal
 penal
 pence
 penny
@@ -603,7 +575,6 @@ peril
 pesto
 petal
 petty
-piece
 piggy
 pitch
 pivot
@@ -639,7 +610,6 @@ pudgy
 puffy
 pulse
 punch
-pupil
 puppy
 puree
 purer
@@ -668,7 +638,6 @@ rajah
 rally
 ralph
 randy
-rapid
 rarer
 raspy
 ratty
@@ -687,7 +656,6 @@ renal
 reply
 reset
 reuse
-revue
 rifle
 rigid
 rigor
@@ -696,7 +664,6 @@ ripen
 riser
 risky
 river
-roach
 roast
 roger
 roost
@@ -705,7 +672,6 @@ rough
 rowdy
 rugby
 ruler
-rumba
 rumor
 rural
 sadly
@@ -727,10 +693,8 @@ scary
 scene
 scion
 scoop
-score
 scree
 screw
-scrum
 scuba
 segue
 seize
@@ -750,7 +714,6 @@ sheep
 sheer
 sheet
 sheik
-shelf
 shied
 shiny
 shirt
@@ -811,17 +774,14 @@ sorry
 south
 spank
 spare
-spark
 spasm
 spawn
-spear
 speed
 sperm
 spied
 spiky
 spilt
 spiny
-spite
 split
 spoil
 spoof
@@ -836,12 +796,10 @@ spurn
 squib
 stack
 stalk
-stamp
 stank
 stave
 steak
 steal
-steep
 steer
 stern
 stilt
@@ -857,7 +815,6 @@ stuff
 stump
 stunk
 stunt
-suave
 suing
 suite
 sully
@@ -867,7 +824,6 @@ swami
 swamp
 swarm
 swash
-swath
 swear
 swept
 swift
@@ -901,17 +857,13 @@ thong
 throb
 thrum
 tight
-timer
 timid
 toddy
 token
 tonal
 tonga
-tooth
 torus
 tower
-track
-trail
 tramp
 tread
 trial
@@ -919,7 +871,6 @@ tribe
 trick
 tried
 tripe
-troop
 trout
 truce
 truck
