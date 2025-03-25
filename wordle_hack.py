@@ -35,6 +35,8 @@ def intro():
 def setup_parse():
     parser = argparse.ArgumentParser(description="Wordle Hack")
     parser.add_argument("--debug", action='store_true', help="Run with debug logging")
+    parser.add_argument("--generate-starters", action='store_true', 
+                      help="Generate and save optimal starter words")
     return parser.parse_args()
 
 def get_guess(guess, words):
@@ -252,6 +254,12 @@ def log_debug(message):
 
 if __name__ == "__main__":
     args = setup_parse()
+
+    if args.generate_starters:
+        import starters
+        print("Generating optimal starter words...")
+        starters.find_best_starters()
+        sys.exit("Starter words generated and saved to words/best_starters.txt")
 
     log_debug(f"Debug mode is on")
     log_debug(f"Opening file {WORD_FILE}")
