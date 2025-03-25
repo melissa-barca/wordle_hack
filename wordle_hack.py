@@ -3,6 +3,7 @@ import starters
 import collections
 import random
 import sys
+import math
 
 MAX_GUESS = 6
 WORD_LENGTH = 5
@@ -169,40 +170,78 @@ def most_common_letter(words, exclude = []):
     #return collections.Counter(long_word).most_common(round(len(words) / 2))[0][0]
 
 def most_common_letter_guess(words):
-    excludes = []
-    while len(words) != 1:
-        letter = most_common_letter(words, excludes)
+    if len(words) <= 3:
+        # If very few words remain, just return the first one
+        return words[0]
+    
+    # Score each word based on unique letter frequency
+    word_scores = {}
+    for word in words:
+        # Only count each letter once per word to avoid duplicates
+        unique_letters = set(word)
+        score = 0
+        for letter in unique_letters:
+            # Count how many words contain this letter
+            score += sum(1 for w in words if letter in w)
+        word_scores[word] = score
+    
+    # Return the word with the highest score
+    return max(word_scores, key=word_scores.get)
 
-        if letter == None:
-            if len(words) == 0:
-                print(f"Sorry there are no more words in this list.")
-                return;
-            return random.choice(words)
-        excludes.append(letter)
-
-        words = [w for w in words if letter in w]
-    return words[0]
+def calculate_entropy(word, word_list):
+    """Calculate how much a guess reduces possible solutions"""
+    patterns = {}
+    
+    # For each potential answer, determine what pattern we'd get
+    for potential_answer in word_list:
+        pattern = []
+        for i, letter in enumerate(word):
+            if letter == potential_answer[i]:
+                pattern.append('G')  # Green
+            elif letter in potential_answer:
+                pattern.append('Y')  # Yellow
+            else:
+                pattern.append('.')  # Gray
+        
+        pattern_key = ''.join(pattern)
+        patterns[pattern_key] = patterns.get(pattern_key, 0) + 1
+    
+    # Calculate entropy (information gain)
+    total = len(word_list)
+    entropy = 0
+    for count in patterns.values():
+        probability = count / total
+        entropy -= probability * (math.log2(probability))
+    
+    return entropy
 
 def get_next_guess(wordle, words, results, backup_files):
-    result = most_common_letter_guess(words)
-    if result is not None:
-        return result
+    if len(words) < 20:
+        # For small word lists, calculate entropy for all words
+        word_entropy = {word: calculate_entropy(word, words) for word in words}
+        return max(word_entropy, key=word_entropy.get)
+    
+    # Existing logic for larger word lists
+    # ...
 
-    while len(backup_files) > 0:
-        file_name = backup_files.pop(0)
-        log_debug(f"Opening file {file_name}")
-        with open(file_name, encoding='utf-8') as f:
-            words = f.read().strip().split()
-        log_debug(f"...read {len(words)} words...")
-        words = apply_results(results, words)
-        log_debug(f"New length of words {len(words)}")
-        if len(words) > 0:
-            result = most_common_letter_guess(words)
-            log_debug(f"Using most common letter guess")
-            if result is not None:
-                return result
-    print(f"Oh no! We ran out of words!")
-    #return most_common_letter_guess(words)
+def position_based_guess(words):
+    # Create a scoring matrix for each position
+    position_scores = [{} for _ in range(WORD_LENGTH)]
+    
+    # Count letter frequencies at each position
+    for word in words:
+        for pos, letter in enumerate(word):
+            position_scores[pos][letter] = position_scores[pos].get(letter, 0) + 1
+    
+    # Score each word based on positional letter frequency
+    word_scores = {}
+    for word in words:
+        score = 0
+        for pos, letter in enumerate(word):
+            score += position_scores[pos].get(letter, 0)
+        word_scores[word] = score
+    
+    return max(word_scores, key=word_scores.get)
 
 def log_debug(message):
     try:
